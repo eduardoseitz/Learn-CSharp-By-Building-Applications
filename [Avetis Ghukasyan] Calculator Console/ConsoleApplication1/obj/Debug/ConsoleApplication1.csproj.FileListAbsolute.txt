@@ -1,0 +1,13 @@
+c:\users\eduar\documents\Visual Studio\Calculator Console [Avetis Ghukasyan]\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\eduar\documents\Visual Studio\Calculator Console [Avetis Ghukasyan]\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\eduar\documents\Visual Studio\Calculator Console [Avetis Ghukasyan]\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\eduar\documents\Visual Studio\Calculator Console [Avetis Ghukasyan]\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+c:\users\eduar\documents\Visual Studio\Calculator Console [Avetis Ghukasyan]\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+c:\users\eduar\documents\Visual Studio\Calculator Console [Avetis Ghukasyan]\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Visual Studio\[Avetis Ghukasyan] Calculator Console\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+D:\Visual Studio\[Avetis Ghukasyan] Calculator Console\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+D:\Visual Studio\[Avetis Ghukasyan] Calculator Console\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Visual Studio\[Avetis Ghukasyan] Calculator Console\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Visual Studio\[Avetis Ghukasyan] Calculator Console\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Visual Studio\[Avetis Ghukasyan] Calculator Console\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Visual Studio\[Avetis Ghukasyan] Calculator Console\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
