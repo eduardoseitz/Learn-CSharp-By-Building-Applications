@@ -1,0 +1,11 @@
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\bin\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.deps.json
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\bin\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.runtimeconfig.json
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\bin\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.runtimeconfig.dev.json
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\bin\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.dll
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\bin\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.pdb
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\obj\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.csprojAssemblyReference.cache
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\obj\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\obj\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.AssemblyInfoInputs.cache
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\obj\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.AssemblyInfo.cs
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\obj\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.dll
+D:\Visual Studio\Learn-CSharp-By-Building-Applications\[Avetis Ghukasyan] Word Unscrambler\[Avetis Ghukasyan] Word Unscrambler\obj\Debug\netcoreapp2.1\[Avetis Ghukasyan] Word Unscrambler.pdb

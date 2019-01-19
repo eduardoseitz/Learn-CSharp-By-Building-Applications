@@ -1,9 +1,11 @@
 Show options to user [M] for manual [F] for file
 option = user input
+
 // Manual
 if option == 'M' or 'm'
 	Ask user to list words separeted by a [,]
 	user input
+
 // File
 else if option == 'f' or 'F'
 	Ask user to enter file location
@@ -16,6 +18,7 @@ else if option == 'f' or 'F'
 			return to start
 		If no then
 			quit application()
+
 // Invalid Option
 else option
 	display a warming massage
@@ -24,7 +27,8 @@ else option
 				return to start
 			If no then
 				quit application()
-While file not ended
+
+//While file not ended
 	While != ','
 		word = leters in lowercase
 		While all combinations havent ended
@@ -32,7 +36,9 @@ While file not ended
 		While havent compared all words
 			if words == wordlist then
 				add to matched words
-Display matched words
+
+//Display matched words
+
 // Start Over
 Ask if he wants to start over
 If yes then
