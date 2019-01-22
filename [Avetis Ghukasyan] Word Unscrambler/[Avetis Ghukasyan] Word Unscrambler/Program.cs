@@ -11,7 +11,11 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
         static void Main(string[] args)
         {
             // Load up wordlist
-            string[] wordList = File.ReadAllLines("Wordlist.txt");
+            string[] wordList = null;
+            if (File.Exists("Wordlist.txt"))
+            {
+                wordList = File.ReadAllLines("Wordlist.txt");
+            }
             string[] newList = null;
             string[] matchedList = null;
 
@@ -34,7 +38,9 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                 // If new words will be manually entered
                 if (choice.Equals("m") || choice.Equals("manual"))
                 {
-
+                    Console.WriteLine("Type words separated by commas [,]:");
+                    string input = Console.ReadLine();
+                    newList = FormatInput(input, ',', false);
                 }
                 // If new words will be entered from file
                 else if (choice.Equals("f") || choice.Equals("file"))
@@ -49,15 +55,28 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                         Console.WriteLine("\n!File loaded sucesfully!\n");
 
                         newList = File.ReadAllLines(path);
-                        Array.Sort(newList);
-                        matchedList = newList;
                     }
                 }
-
                 // If exists display matched list on screen
-                if (matchedList != null) {
-                    foreach (string match in matchedList)
-                        Console.WriteLine("MATCH FOUND: {0}", match);
+                matchedList = MatchList(wordList, newList);
+
+                if (matchedList == null)
+                {
+                    Console.WriteLine("!No words matched!");
+                }
+                else
+                {
+                    PrintList(matchedList);
+
+                    Console.WriteLine("Do you wish to write the results to a file?");
+                    if (Console.ReadLine().ToLower().Equals("yes"))
+                    {
+                        Console.Write("File Name: ");
+                        string path = Console.ReadLine();
+                        File.WriteAllLines(path, matchedList);
+                        Console.WriteLine("Results written successfully!");
+                        Console.WriteLine();
+                    }
                 }
 
                 // Break the loop
@@ -71,7 +90,67 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
         #endregion
 
         #region Helper Methods
-        
+
+        // Turns user input into a list
+        static string[] FormatInput(string input, char separator, bool allowSpaces)
+        {
+            List<string> output = new List<string>();
+            string newWord = string.Empty;
+            
+            // Format input
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i].Equals(','))
+                {
+                    output.Add(newWord);
+                    newWord = string.Empty;
+                }
+                else if ((allowSpaces == true) || (allowSpaces == false && !input[i].Equals(' ')))
+                {
+                    newWord += input[i];
+                }
+            }
+
+            output.Add(newWord);
+            return output.ToArray();
+        }
+
+        // Check if lists matches
+        static string[] MatchList(string[] wordList, string[] newList)
+        {
+            List<string> matches = new List<String>();
+
+            Array.Sort(wordList);
+            Array.Sort(newList);
+
+            // Match loop
+            foreach (string newWord in newList)
+            {
+                foreach (string word in wordList)
+                {
+                    if (newWord.ToLower().Equals(word.ToLower()))
+                    {
+                        matches.Add(word);
+                        Console.WriteLine("Match Found: {0}", word);
+                    }
+                }
+            }
+            
+            return matches.ToArray();
+        }
+
+        // Print word list
+        static void PrintList(string[] list)
+        {
+            Console.WriteLine("\n[Matches]\n");
+
+            foreach (string word in list)
+            {
+                Console.Write("{0};", word);
+            }
+
+            Console.WriteLine("\n");
+        }
 
         #endregion
     }
