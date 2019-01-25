@@ -54,6 +54,7 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                     }
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 // Gets words that matched
                 matchedList = MatchList(wordList, newList, true);
@@ -66,6 +67,8 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                 else
                 {
                     PrintList(matchedList);
+=======
+>>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working
 =======
 >>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working
 
@@ -86,6 +89,7 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
         #endregion
 
         #region Helper Methods
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         // Turns user input into a list
@@ -169,6 +173,9 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
 
             Console.WriteLine("\n");
         }
+=======
+        
+>>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working
 =======
         
 >>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working

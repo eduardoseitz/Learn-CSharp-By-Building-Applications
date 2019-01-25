@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 OMRE
 ctA
+=======
+OMRE, ctA
+>>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working
 =======
 OMRE, ctA
 >>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working
