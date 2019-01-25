@@ -11,11 +11,7 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
         static void Main(string[] args)
         {
             // Load up wordlist
-            string[] wordList = null;
-            if (File.Exists("Wordlist.txt"))
-            {
-                wordList = File.ReadAllLines("Wordlist.txt");
-            }
+            string[] wordList = File.ReadAllLines("Wordlist.txt");
             string[] newList = null;
             string[] matchedList = null;
 
@@ -38,9 +34,7 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                 // If new words will be manually entered
                 if (choice.Equals("m") || choice.Equals("manual"))
                 {
-                    Console.WriteLine("Type words separated by commas [,]:");
-                    string input = Console.ReadLine();
-                    newList = FormatInput(input, ',', false);
+
                 }
                 // If new words will be entered from file
                 else if (choice.Equals("f") || choice.Equals("file"))
@@ -55,8 +49,11 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                         Console.WriteLine("\n!File loaded sucesfully!\n");
 
                         newList = File.ReadAllLines(path);
+                        Array.Sort(newList);
+                        matchedList = newList;
                     }
                 }
+<<<<<<< HEAD
 
                 // Gets words that matched
                 matchedList = MatchList(wordList, newList, true);
@@ -69,16 +66,13 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                 else
                 {
                     PrintList(matchedList);
+=======
+>>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working
 
-                    Console.WriteLine("Do you wish to write the results to a file?");
-                    if (Console.ReadLine().ToLower().Equals("yes"))
-                    {
-                        Console.Write("File Name: ");
-                        string path = Console.ReadLine();
-                        File.WriteAllLines(path, matchedList);
-                        Console.WriteLine("Results written successfully!");
-                        Console.WriteLine();
-                    }
+                // If exists display matched list on screen
+                if (matchedList != null) {
+                    foreach (string match in matchedList)
+                        Console.WriteLine("MATCH FOUND: {0}", match);
                 }
 
                 // Break the loop
@@ -92,6 +86,7 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
         #endregion
 
         #region Helper Methods
+<<<<<<< HEAD
 
         // Turns user input into a list
         static string[] FormatInput(string input, char separator, bool allowSpaces)
@@ -174,6 +169,9 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
 
             Console.WriteLine("\n");
         }
+=======
+        
+>>>>>>> parent of 3cc8bd6... Word Unscrambler Almost Fully Working
 
         #endregion
     }
