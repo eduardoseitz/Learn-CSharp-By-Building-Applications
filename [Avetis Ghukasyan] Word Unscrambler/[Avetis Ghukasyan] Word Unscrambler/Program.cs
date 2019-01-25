@@ -57,10 +57,12 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                         newList = File.ReadAllLines(path);
                     }
                 }
-                // If exists display matched list on screen
-                matchedList = MatchList(wordList, newList);
 
-                if (matchedList == null)
+                // Gets words that matched
+                matchedList = MatchList(wordList, newList, true);
+
+                // If exists display matched list on screen
+                if (matchedList.Equals(null))
                 {
                     Console.WriteLine("!No words matched!");
                 }
@@ -116,14 +118,35 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
         }
 
         // Check if lists matches
-        static string[] MatchList(string[] wordList, string[] newList)
+        static string[] MatchList(string[] wordList, string[] newList, bool suffle)
         {
-            List<string> matches = new List<String>();
-
             Array.Sort(wordList);
             Array.Sort(newList);
 
-            // Match loop
+            List<string> newWords = new List<string>(newList);
+            List<string> matches = new List<String>();
+            
+            // Suffle words and adds new ones
+            //if (suffle)
+            //{
+            //    foreach (string word in newList)
+            //    {
+            //        char[] newWord = word.ToCharArray();
+            //        for (int letter = 0;  letter < word.Length; letter++)
+            //        {
+            //            for (int pos = 0; pos < word.Length; pos++)
+            //            {
+            //                newWord[pos] = word[letter];
+            //                newWord[letter] = word[pos];
+
+            //                if (!newWord.Equals(word))
+            //                    newWords.Add(newWord.ToString());
+            //            }
+            //        }
+            //    }
+            //}
+
+            // Loop through wordlist and add verify if words match
             foreach (string newWord in newList)
             {
                 foreach (string word in wordList)
@@ -135,7 +158,7 @@ namespace _Avetis_Ghukasyan__Word_Unscrambler
                     }
                 }
             }
-            
+
             return matches.ToArray();
         }
 
